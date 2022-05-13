@@ -14,11 +14,11 @@ nodejs express socket.io
 npm run
 open your browser http://localhost:3000/
 ## Install
-'''
+
 $ npm install express
 $ npm install socket.io
 $ npm install -g nodemon
-'''
+
 ## Contribution
 
 ## Licence
