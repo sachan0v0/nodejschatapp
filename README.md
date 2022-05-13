@@ -15,9 +15,20 @@ npm run
 open your browser http://localhost:3000/
 ## Install
 
+
+```bash
+$ # dockerに対してディスレプレイの使用を許可する
+$ xhost +local:docker
+$ # X11のソケットファイルの環境変数
+$ XSOCK=/tmp/.X11-unix
+$ # Xサーバと接続するための認証情報(xauthファイル)のパス
+$ XAUTH=/tmp/.docker.xauth
+$ # xauthファイルを作成する
+$ xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
 $ npm install express
 $ npm install socket.io
 $ npm install -g nodemon
+```
 
 ## Contribution
 
